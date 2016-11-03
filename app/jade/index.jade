@@ -1,0 +1,21 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+        meta(name="format-detection" content="telephone=no")
+        title Template
+        ='\n'
+        <!--build:css css/style.min.css -->
+        link(rel="stylesheet" href="css/main.css")
+        ='\n'
+        <!-- endbuild -->
+    body
+        include blocks/_header.jade
+        include blocks/_content.jade
+        include blocks/_footer.jade
+        ='\n'
+        <!--build:js js/script.min.js -->
+        script(src="js/main.js")
+        ='\n'
+        <!-- endbuild -->
